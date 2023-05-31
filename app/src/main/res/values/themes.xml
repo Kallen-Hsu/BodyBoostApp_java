@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Test_java" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Second</item>
+        <item name="colorPrimaryVariant">#AEC5EB</item>
+        <item name="colorOnPrimary">@color/Second</item>
+        <item name="android:textColor">@color/Second</item>
+        <item name="android:iconTint">@color/white</item>
+        <item name="actionBarPopupTheme">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Lavender</item>
+        <item name="colorSecondaryVariant">@color/Lavender</item>
+        <item name="colorOnSecondary">@color/Second</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+</resources>
