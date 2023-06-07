@@ -31,7 +31,7 @@
             android:layout_marginBottom="40dp"
             android:text="登入"
             android:textAlignment="center"
-            android:textColor="@color/Second"
+            android:textColor="@color/TextColor"
             android:textSize="28sp"
             android:textStyle="bold" />
 
@@ -42,23 +42,22 @@
             android:layout_marginTop="40dp"
             android:background="@drawable/custom_edittext"
             android:drawableLeft="@drawable/baseline_person_24"
-            android:drawablePadding="8dp"
+            android:drawablePadding="9dp"
             android:hint="帳號"
-            android:textColorHint="@color/Second"
+            android:textColorHint="@color/TextBoxColor"
             android:padding="8dp"
-
-            android:textColor="@color/Second" />
+            android:textColor="@color/Second"/>
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/custom_edittext"
             android:drawableLeft="@drawable/baseline_lock_24"
-            android:drawablePadding="8dp"
+            android:drawablePadding="9dp"
             android:hint="密碼"
-            android:textColorHint="@color/Second"
+            android:textColorHint="@color/TextBoxColor"
             android:inputType="textPassword"
             android:padding="8dp"
             android:textColor="@color/Second" />
@@ -70,7 +69,8 @@
             android:layout_gravity="right"
             android:background="#00FFFFFF"
             android:foregroundTint="#00FFFFFF"
-            android:text="忘記密碼" />
+            android:text="忘記密碼"
+            android:textColor="@color/TextColor"/>
 
         <Button
             android:id="@+id/loginButton"
@@ -86,26 +86,36 @@
             app:cornerRadius="10dp" />
 
         <Button
-            android:id="@+id/register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/registerButton"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:background="#00FFFFFF"
-            android:textColor="@color/Second"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
             android:text="註冊帳號"
-            android:textSize="14sp" />
+            android:textColor="@color/TextColor"
+            android:textSize="16sp"
+            app:cornerRadius="40dp" />
 
         <Button
             android:id="@+id/google_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/white"
+            android:drawablePadding="9dp"
             android:text="使用GOOGLE帳號登入"
-            android:background="#00FFFFFF"
-            android:textColor="@color/Second"
+            android:textColor="@color/TextColor"
             android:textSize="14sp"
-/>
+            app:cornerRadius="40dp"
+            app:icon="@drawable/google"
+            app:iconSize="20dp"
+            app:iconTint="#00FFFFFF"
+            app:iconTintMode="add" />
+
+
     </LinearLayout>
     </LinearLayout>

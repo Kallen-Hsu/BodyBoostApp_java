@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        tools:context=".HomeFragment">
+        tools:context=".SportFragment">
 
 
         <ImageView
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="每日運動打卡"
-            android:textColor="#E9AFA3"
+            android:textColor="@color/TextColor"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
@@ -48,21 +48,23 @@
             android:id="@+id/button3"
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:background="@drawable/button_style"
+            android:background="@drawable/button"
             android:text="簽到"
+            android:textColor="#FFFFFFFF"
             android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="#FFFFFFFF"
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
             app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintTop_toTopOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.511" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="320dp"
             android:layout_height="130dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="2dp"
             android:src="@drawable/checkin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,22 +75,53 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="飲食紀錄"
-            android:textColor="#E9AFA3"
+            android:textColor="@color/TextColor"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/imageView3"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintHorizontal_bias="0.102"
+            app:layout_constraintHorizontal_bias="0.105"
             app:layout_constraintStart_toStartOf="@+id/imageView3"
             app:layout_constraintTop_toTopOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.226" />
+            app:layout_constraintVertical_bias="0.235" />
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="176dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_edittext"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.187"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="新增"
+            android:background="@drawable/button"
+            android:textColor="#FFFFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.567"
+            app:layout_constraintStart_toEndOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.707" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="320dp"
-            android:layout_height="250dp"
+            android:layout_height="200dp"
             android:src="@drawable/sport"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -97,15 +130,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="運動推薦"
-            android:textColor="#E9AFA3"
+            android:textColor="@color/TextColor"
             android:textSize="16sp"
             android:textStyle="bold"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="@+id/imageView4"
             app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            app:layout_constraintVertical_bias="0.264" />
+            app:layout_constraintVertical_bias="0.176" />
 
         <ScrollView
             android:layout_width="match_parent"

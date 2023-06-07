@@ -26,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        Button registerButton = (Button) findViewById(R.id.register);
+        Button registerButton = (Button) findViewById(R.id.registerButton);
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
